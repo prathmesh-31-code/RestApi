@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Book</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <hr>
+    <h1>Create New Book</h1>
+    <hr>
+
+    <form action="http://localhost:3000/book" method="POST">
+        <div class="form-group">
+            <label for="isbn">ISBN</label>
+            <input class="form-control" name="isbn" id="isbn" required>
+        </div>
+
+        <div class="form-group">
+            <label for="title">Title</label>
+            <input class="form-control" name="title" id="title" required>
+        </div>
+
+        <div class="form-group">
+            <label for="author">Author</label>
+            <input class="form-control" name="author" id="author" required>
+        </div>
+
+        <div class="form-group">
+            <label for="pdate">Published Date</label>
+            <input class="form-control" name="pdate" id="pdate" type="date" required>
+            <small class="form-text text-muted">Please use the format YYYY-MM-DD.</small>
+        </div>
+
+        <div class="form-group">
+            <label for="publisher">Publisher</label>
+            <input class="form-control" name="publisher" id="publisher" required>
+        </div>
+
+        <div class="form-group">
+            <label for="pages">Number of Pages</label>
+            <input class="form-control" name="pages" id="pages" type="number" min="1" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+<!-- Optional: Add Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
